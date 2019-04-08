@@ -66,8 +66,8 @@ function Lexus(model, year, color, autopilot, headlights, maxSpeed) {
 
 Lexus.prototype.__proto__ = Car.prototype;
 
-Lexux.prototype.pilot = function(autopilot) {
-    if(this.autopilot == true) {
+Lexus.prototype.pilot = function(autopilot) {
+    if(this.autopilot == true || this.autopilot.length >= 1) {
         alert('You have autopilot system!');
     }
     else {

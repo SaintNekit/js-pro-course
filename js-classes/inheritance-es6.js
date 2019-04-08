@@ -52,11 +52,11 @@ class BMW extends Car {
     }
 
     getAge(year) {
-        super.getAge;
+        super.getAge();
     }
 
     changeColor(newColor) {
-        super.changeColor;
+        super.changeColor();
     }
 
     getModel(model, version) {
@@ -74,11 +74,11 @@ class Lexus extends Car {
         this.maxSpeed = maxSpeed;
     }
     getAge(year) {
-        super.getAge;
+        super.getAge();
     }
 
     changeColor(newColor) {
-        super.changeColor;
+        super.changeColor();
     }
 
     pilot(autopilot) {
@@ -102,11 +102,11 @@ class Zaporozhets extends Car {
     }
 
     getAge(year) {
-        super.getAge;
+        super.getAge();
     }
 
     changeColor(newColor) {
-        super.changeColor;
+        super.changeColor();
     }
 
     getWheelsInfo(steeringWheel) {

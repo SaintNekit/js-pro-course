@@ -87,20 +87,26 @@ function Zaporozhets(wheels, steeringWheel, windows, year, color, maxSpeed) {
 Zaporozhets.prototype.__proto__ = Car.prototype;
 
 Zaporozhets.prototype.getWheelsInfo = function(wheels) {
-    if (this.wheels == true) {
-        alert("Congratulations, your car has wheels!")
+    if (this.wheels >= 1 && this.wheels < 6) {
+        alert("Congratulations, your car has " + this.wheels + " wheels!")
+    }
+    if (this.wheels > 5) {
+        alert("Your car looks like tank")
     }
 }
 
 Zaporozhets.prototype.getSteeringWheel = function(steeringWheel) {
-    if (this.steeringWheel == true) {
+    if (this.steeringWheel == true || this.steeringWheel.length >= 1) {
         alert('Congratulations, you can drive your car!')
+    }
+    else {
+        alert("Unfortunately we dont know how you will drive your car...")
     }
 }
 
 Zaporozhets.prototype.getWindow = function(windows) {
     if (this.windows >= 1) {
-        alert('Your car has ' + this.windows + 'window');
+        alert('Your car has ' + this.windows + ' window');
     }
     else {
         alert('We recomended to take glasses with you - very strong wind outside');

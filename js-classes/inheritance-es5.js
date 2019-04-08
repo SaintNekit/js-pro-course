@@ -14,7 +14,7 @@ Car.prototype.getFullName = function(name, model) {
 
 Car.prototype.getAge = function(year) {
     let age = (2019 - this.year);
-    alert('Your car is :' + age + 'years old');
+    alert('Your car is : ' + age + ' years old');
 }
 
 Car.prototype.changeColor = function(newColor) {
@@ -35,7 +35,7 @@ Car.prototype.calculateWay = function(kilometers, fuel) {
     alert('Your way will take ' + time + 'hours');
     let requestedFuel = this.fuelConsumption * time;
     if (requestedFuel > fuel) {
-        let refuelTimes = ((requestedFuel - fuel) % this.fuelCapacity) + 1;
+        let refuelTimes = Math.floor((requestedFuel - fuel) / this.fuelCapacity) + 1;
         alert('You need to visit gas station ' + refuelTimes + ' times in your trip');
     }
 }

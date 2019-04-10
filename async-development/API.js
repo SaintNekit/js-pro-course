@@ -1,5 +1,6 @@
 let btn = document.getElementById('btn');
-btn.addEventListener('click', function() {
+let form = document.getElementById('form');
+form.addEventListener('submit', function() {
     let city = document.getElementById('input').value;
     let url = `http://api.apixu.com/v1/forecast.json?key=13fc76b820274314b17173821191302&q=${city}`;
     fetch(url)
@@ -11,4 +12,3 @@ btn.addEventListener('click', function() {
         temp.innerHTML = data.current.temp_c;
     });
 }); 
-

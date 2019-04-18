@@ -1,0 +1,30 @@
+{
+  "name": "npm",
+  "version": "1.0.0",
+  "description": "NPM project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "browserify": "browserify index.js -o bundle.js",
+    "bundle": "babelify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaintNekit/js-pro-course.git"
+  },
+  "author": "SaintNekit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SaintNekit/js-pro-course/issues"
+  },
+  "homepage": "https://github.com/SaintNekit/js-pro-course#readme",
+  "dependencies": {
+    "jquery": "^3.4.0",
+    "lodash": "^4.17.11"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "babelify": "^10.0.0",
+    "browserify": "^16.2.3"
+  }
+}

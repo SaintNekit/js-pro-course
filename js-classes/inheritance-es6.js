@@ -43,12 +43,10 @@ class Car {
 
 class BMW extends Car {
     constructor(model, version, year, color, wheelDisc, maxSpeed) {
+        super.constructor();
         this.model = model;
         this.version = version;
-        this.year = year;
-        this.color = color;
         this.wheelDisc = wheelDisc;
-        this.maxSpeed = maxSpeed;
     }
 
     getAge(year) {
@@ -66,12 +64,10 @@ class BMW extends Car {
 
 class Lexus extends Car {
     constructor(model, year, color, autopilot, headlights, maxSpeed) {
+        super.constructor();
         this.model = model;
-        this.year = year;
-        this.color = color;
         this.autopilot = autopilot;
         this.headlights = headlights;
-        this.maxSpeed = maxSpeed;
     }
     getAge(year) {
         super.getAge();
@@ -93,12 +89,10 @@ class Lexus extends Car {
 
 class Zaporozhets extends Car {
     constructor(wheels, steeringWheel, windows, year, color, maxSpeed) {
+        super.constructor();
         this.wheels = wheels;
         this.steeringWheel = steeringWheel;
         this.windows = windows;
-        this.year = year;
-        this.color = color;
-        this.maxSpeed = maxSpeed;
     }
 
     getAge(year) {

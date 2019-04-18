@@ -41,30 +41,25 @@ Car.prototype.calculateWay = function(kilometers, fuel) {
 }
 
 function BMW(model, version, year, color, wheelDisc, maxSpeed) {
+    Car.apply(this, arguments);
     this.model = model;
     this.version = version;
-    this.year = year;
-    this.color = color;
     this.wheelDisc = wheelDisc;
-    this.maxSpeed = maxSpeed;
 }
 
-BMW.prototype.__proto__ = Car.prototype;
+BMW.prototype = Object.create(Car.prototype);
 
 BMW.prototype.getModel = function(model, version) {
     alert('You have BMW ' + this.model + this.version);
 }
 
 function Lexus(model, year, color, autopilot, headlights, maxSpeed) {
-    this.model = model;
-    this.year = year;
-    this.color = color;
+    Car.apply(this, arguments);
     this.autopilot = autopilot;
     this.headlights = headlights;
-    this.maxSpeed = maxSpeed;
 }
 
-Lexus.prototype.__proto__ = Car.prototype;
+Lexus.prototype = Object.create(Car.prototype);
 
 Lexus.prototype.pilot = function(autopilot) {
     if(this.autopilot == true || this.autopilot.length >= 1) {
@@ -76,15 +71,13 @@ Lexus.prototype.pilot = function(autopilot) {
 }
 
 function Zaporozhets(wheels, steeringWheel, windows, year, color, maxSpeed) {
+    Car.apply(this, arguments);
     this.wheels = wheels;
     this.steeringWheel = steeringWheel;
     this.windows = windows;
-    this.year = year;
-    this.color = color;
-    this.maxSpeed = maxSpeed;
 }
 
-Zaporozhets.prototype.__proto__ = Car.prototype;
+Zaporozhets.prototype = Object.create(Car.prototype);
 
 Zaporozhets.prototype.getWheelsInfo = function(wheels) {
     if (this.wheels >= 1 && this.wheels < 6) {

@@ -1,0 +1,35 @@
+.field {
+height: 200px;
+width: 250px;
+text-align: center;
+font-size: 130pt;
+padding-left: 25px;
+color: gray;
+border: solid 1px gray;
+padding-right: 22px;
+}
+
+.button {
+  width: 100px;
+  height: 100px;
+  font-size: 60pt;
+}
+
+.green {
+  background: url('https://api.iconify.design/fa:plus.svg?color=white') no-repeat center center;
+  background-color: green;
+  color: white;
+  background-size: 30px;
+}
+
+.red {
+  background: url('https://api.iconify.design/fa:minus.svg?color=white') no-repeat center center;
+  background-color: red;
+  color: white;
+  background-size: 30px;
+}
+.yellow {
+  background: url('https://api.iconify.design/fa:refresh.svg') no-repeat center center;
+  background-color: yellow;
+  background-size: 30px;
+}

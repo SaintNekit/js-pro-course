@@ -20,19 +20,15 @@ class App extends React.Component {
     )
   }
   plus = () => {
-    this.setState({
-      counter: this.state.counter + 1
-    })
+    this.setState((prevState) => ({ counter: prevState.counter + 1 }))
   }
+
   minus = () => {
-    this.setState({
-      counter: this.state.counter -1
-    })
+    this.setState((prevState) => ({ counter: prevState.counter - 1 }))
   }
+
   refresh = () => {
-    this.setState({
-      conter: this.state.counter = 0
-    })
+    this.setState(() => ({ counter: 0 }))
   }
 }
 
